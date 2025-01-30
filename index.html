@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container padding flex">
+        <div class="left">
+          <p>Where in the world</p>
+        </div>
+
+        <div id="darkMode" class="right flex">
+          <img
+            src="./assets/Group 3.png"
+            width="15px"
+            height="13.75px"
+            alt=""
+          />
+          <p>Dark Mode</p>
+        </div>
+      </div>
+
+      <div class="container1 padding flex">
+        <div class="search-block flex">
+          <img src="./assets/search.png" width="18px" height="18px" alt="" />
+
+          <input id="input" type="text" placeholder="Search for a country..." />
+        </div>
+
+        <div class="flex col">
+          <div class="filter flex">
+            <p>Filter by Region</p>
+
+            <img
+              id="clickToToggle"
+              src="./assets/Group 2 (1).png"
+              width="12px"
+              height="12px"
+              alt=""
+            />
+          </div>
+          <div id="dropdown">
+            <ul>
+              <li data-region="All">All</li>
+              <li data-region="Africa">Africa</li>
+              <li data-region="Americas">America</li>
+              <li data-region="Asia">Asia</li>
+              <li data-region="Europe">Europe</li>
+              <li data-region="Oceania">Oceania</li>
+              <li data-region="Antarctic">Antartica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <select id="dropdown">
+              
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select> -->
+
+      <img src="./assets/Loading_2.gif" alt="" id="myLoader">
+
+      <div class="bigDiv flex">
+        <!-- <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    <div class="padded" >
+                        <p id="details">Germany</p>
+                        <p>Population: <span class="light">81,770,900</span></p>
+                        <p>Region: <span class="light">Europe</span></p>
+                        <p>Capital: <span class="light">Berlin</span></p>
+                    </div>
+                </div> -->
+
+        <!-- <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    
+                    
+                    <div class="padded" >
+                    <p id="details">Germany</p>
+                    <p>Population: <span class="light">81,770,900</span></p>
+                    <p>Region: <span class="light">Europe</span></p>
+                    <p>Capital: <span class="light">Berlin</span></p>
+                </div>
+                </div>
+                <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    <div class="padded" >
+                    <p id="details">Germany</p>
+                    <p>Population: <span class="light">81,770,900</span></p>
+                    <p>Region: <span class="light">Europe</span></p>
+                    <p>Capital: <span class="light">Berlin</span></p>
+                </div>
+                </div>
+                <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    <div class="padded" >
+                        <p id="details">Germany</p>
+                        <p>Population: <span class="light">81,770,900</span></p>
+                    <p>Region: <span class="light">Europe</span></p>
+                    <p>Capital: <span class="light">Berlin</span></p>
+                </div>
+                </div>
+
+                <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    <div class="padded" >
+                        <p id="details">Germany</p>
+                        <p>Population: <span class="light">81,770,900</span></p>
+                        <p>Region: <span class="light">Europe</span></p>
+                        <p>Capital: <span class="light">Berlin</span></p>
+                    </div>
+                </div>
+
+                <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    
+                    
+                    <div class="padded" >
+                    <p id="details">Germany</p>
+                    <p>Population: <span class="light">81,770,900</span></p>
+                    <p>Region: <span class="light">Europe</span></p>
+                    <p>Capital: <span class="light">Berlin</span></p>
+                </div>
+                </div>
+                <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    <div class="padded" >
+                    <p id="details">Germany</p>
+                    <p>Population: <span class="light">81,770,900</span></p>
+                    <p>Region: <span class="light">Europe</span></p>
+                    <p>Capital: <span class="light">Berlin</span></p>
+                </div>
+                </div>
+                <div class="flex column">
+                    <img id="setCountryFlag" src="./assets/1280px-Flag_of_Germany.svg (1).png" alt="">
+                    <div class="padded" >
+                        <p id="details">Germany</p>
+                        <p>Population: <span class="light">81,770,900</span></p>
+                    <p>Region: <span class="light">Europe</span></p>
+                    <p>Capital: <span class="light">Berlin</span></p>
+                </div>
+                </div> -->
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
