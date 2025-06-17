@@ -65,6 +65,7 @@ function convertToJson(data1) {
 
 function onFailure(err) {
     myFunction();
+    console.log("debug2: ", err)
     feedBack(err.message);
 }
 
@@ -79,7 +80,10 @@ window.addEventListener('load', () => {
             search(data);
             filter(data);
         })
-        .catch((error) => onFailure(error))
+        .catch((error) => {
+            console.log("debug1: ", error)
+            onFailure(error)
+        })
 })
 
 // create a grid and update DOM 
