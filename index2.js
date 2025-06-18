@@ -167,17 +167,14 @@ let imageId = ["setCountryFlag"];
         btn1.innerHTML = `${data.borders}`;
         let split = btn1.innerHTML.split(",");
         split.forEach((x, index) => {
+          
+          
           let btns = document.createElement("a");
-          btns.classList.add("button");
-          btns.setAttribute("href", "#");
-          btns.id = `borderCountry${index + 1}`;
-          aLinks1.append(btns);
-          if (btn1.innerHTML === "undefined") {
-            btns.innerHTML = "Doesn't share Border(s) with any Country";
-          } else {
-            btns.innerHTML = x;
-        
-          }
+            btns.classList.add("button");
+            btns.setAttribute("href", "#");
+            btns.id = `borderCountry${index + 1}`;
+            aLinks1.append(btns);
+              btns.innerHTML = x || "Doesn't share Border(s) with any Country";
       })          
       }
 }     

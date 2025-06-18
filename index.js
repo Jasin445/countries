@@ -42,7 +42,7 @@ dark.addEventListener('click', event => {
 // for fetching API data
 function getCountries() {
     return new Promise((resolve, reject) => {
-        let url = "https://restcountries.com/v3.1/all";
+        let url = "https://restcountries.com/v3.1/all?fields=name,capital,population,flags,region,subregion,languages,currencies,borders,tld";
         resolve(url);
     })
 }
